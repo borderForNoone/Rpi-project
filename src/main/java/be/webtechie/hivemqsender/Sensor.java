@@ -38,7 +38,7 @@ public class Sensor {
                 .applyWillPublish()
                 .send();
 
-        // 3. simulate periodic publishing of sensor data
+        // 3. publishing of sensor data
         while (true) {
             client.toBlocking().publishWith()
                     .topic("home/temperature")
